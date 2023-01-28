@@ -1,0 +1,27 @@
+*{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.main-text{
+    font-size: 30px;
+    font-weight: bold;}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.price{
+    font-size: 15px;
+    font-weight: normal;
+}
+.add_new{
+font-size: 15px;
+  color: red;
+  border-bottom: 1px dashed;
+}

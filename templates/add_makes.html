@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New</title>
+</head>
+<body>
+<form  method="POST" action="/">
+  <div class="">Place new advertisement</div>
+  <select name="make">
+    <option value="Mercedes Benz">Mercedes Benz</option>
+    <option value="Toyota">Toyota</option>
+    <option value="BMW">BMW</option>
+    <option value="Subaru">Subaru</option>
+
+
+  </select>
+  <div>Year</div>
+  <input type="number" name="year">
+  <div>Price</div>
+  <input type="number" name="price">
+  <div>Image</div>
+  <input type="url" name="image">
+  <p>Description<br>
+    <textarea name="description" cols="40" rows="3"></textarea></p>
+  <p>Contacts<br>
+    <textarea name="contacts" cols="40" rows="3"></textarea></p>
+
+  <input type="submit" value="Create">
+</form>
+</body>
+</html>

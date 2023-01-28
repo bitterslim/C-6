@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<section>
+    <div class="container">
+        {% if context.makes %}
+        <div>
+            <div>
+                <h1 class="main-text">Cars Dealership</h1>
+            </div>
+        </div>
+        {% for make in context.makes%}
+        <div>
+            <div>
+                <img class="image" src={{make.get('image')}} width="250" height="200" alt="car">
+            </div>
+            <div>
+                <div>
+                    <div ><p class="name">
+                            <a style="text-decoration: none; color: black" href="/car_page" >{{make.get('make')}}</a> ({{make.get('year')}})</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p class="price">${{make.get('price')}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        {% endfor %}
+        {% else %}
+        <div>
+            <div>
+                <h2>NONE</h2>
+            </div>
+        </div>
+        {% endif %}
+        <div>
+            <div>
+                <a class="add_new" style="text-decoration: none" href="/add">Place new advertisement</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
